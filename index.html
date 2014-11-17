@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>R.S.V.P &amp; B.T.W.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+
+		<header class="clearfix">
+			<h1 class="break"><span>R.S.V.P. <span class="ampersand">&amp;</span> B.T.W.</span></h1>
+			<h2>Meal-planning for when you're hosting a dinner party for your<br>meat-free, vegan, gluten-free, nut-free,<br><span class="highlight">how-in-the-world-do-I-feed-them friends.</span></h2>
+		</header>
+
+		<section>
+			<div class="sectionDiet clearfix" id="selection">
+				<h3 class="rule"><span>Pick a Diet</span></h3>
+				<div class="threeColumn">
+					<input type="radio" name="diet" value="390^Pescetarian" id="pescetarian" class="diet"><label for="pescetarian" class="checking">Pescetarian</label>
+				</div>
+				<div class="threeColumn">
+					<input type="radio" name="diet" value="387^Lacto-ovo vegetarian" id="veggie" class="diet">
+					<label for="veggie">Vegetarian</label>
+				</div>
+				<div class="threeColumn">
+					<input type="radio" name="diet" value="386^Vegan" id="vegan" class="diet">
+					<label for="vegan" class="checking">Vegan</label>
+				</div>
+			</div><!-- /.sectionDiet -->
+
+			<div class="sectionAllergy clearfix">
+				<h3 class="rule"><span>Any Allergies?</span></h3>
+				<div class="allergy">
+					<input type="checkbox" name="peanut" value="394^Peanut-Free" id="peanut" class="allergy">
+					<label for="peanut">
+						<figure class="icons" data-src="images/peanutb.png" data-altsrc="images/peanutc.png">
+							<img src="images/peanutb.png" alt="">
+						</figure><span class="labelSpace">Peanut Allergy</span>	
+					</label>
+				</div><!-- /.allergy -->
+				<div class="allergy">
+					<input type="checkbox" name="dairy" value="396^Dairy-Free" id="dairy" class="allergy">
+					<label for="dairy">
+						<figure class="icons" data-src="images/dairyb.png" data-altsrc="images/dairyc.png">
+							<img src="images/dairyb.png" alt="">
+						</figure><span class="labelSpace">Dairy-Free</span></label>
+				</div><!-- /.allergy -->
+				<div class="allergy">
+					<input type="checkbox" name="soy" value="400^Soy-Free" id="soy" class="allergy">
+					<label for="soy">
+						<figure class="icons" data-src="images/soyb.png" data-altsrc="images/soyc.png">
+							<img src="images/soyb.png" alt="">
+						</figure><span class="labelSpace">Soy-Free</span></label>
+				</div><!-- /.allergy -->
+				<div class="allergy">
+					<input type="checkbox" name="gluten" value="393^Gluten-Free" id="gluten" class="allergy">
+					<label for="gluten">
+						<figure class="icons" data-src="images/glutenb.png" data-altsrc="images/glutenc.png">
+							<img src="images/glutenb.png" alt="">
+						</figure><span class="labelSpace">Gluten-Free</span></label>
+				</div><!-- /.allergy -->
+				<div class="allergy">
+					<input type="checkbox" name="egg" value="397^Egg-Free" id="egg" class="allergy">
+					<label for="egg">
+						<figure class="icons" data-src="images/eggb.png" data-altsrc="images/eggc.png">
+							<img src="images/eggb.png" alt="">
+						</figure><span class="labelSpace">Egg-Free</span></label>
+				</div><!-- /.allergy -->
+				<div class="allergy">
+					<input type="checkbox" name="seafood" value="398^Seafood-Free" id="seafood" class="allergy">
+					<label for="seafood">
+					<figure class="icons" data-src="images/seafoodb.png" data-altsrc="images/seafoodc.png">
+					<img src="images/seafoodb.png" alt="">
+					</figure><span class="labelSpace">Seafood-Free</span></label>
+				</div><!-- /.allergy -->
+			</div><!-- /.sectionAllergy -->
+
+			<div class="sectionCourse clearfix">
+				<h3 class="rule"><span>Pick a Course</span></h3>
+				<div class="threeColumn">
+					<input type="radio" name="course" value="course^course-Main Dishes" class="course" id="main">
+					<label for="main">Main Course</label>
+				</div><!-- /.threeColumn -->
+				<div class="threeColumn">
+					<input type="radio" name="course" value="course^course-Side Dishes" class="course" id="side">
+					<label for="side">Side Dishes</label>
+				</div><!-- /.threeColumn -->
+				<div class="threeColumn">
+					<input type="radio" name="course" value="course^course-Desserts" class="course" id="dessert">
+					<label for="dessert">Dessert</label>
+				</div><!-- /.threeColumn -->
+			</div><!-- /.sectionCourse -->
+
+			<div class="sectionButton clearfix">
+				<div class="button">
+					<button id="search"><span class="buttonText">Get Recipes</span></button>
+				</div>
+			</div><!-- /.sectionButton -->
+
+			<div class="sectionRecipes clearfix" id="recipeResults">
+				<div class="recipeColumn clearfix">
+						<!-- recipe results go here -->
+				</div><!-- /.recipeColumn -->
+				<br>
+			</div><!-- sectionRecipes -->
+
+			
+		</section>
+
+		<footer>
+			<p>Designed with <i class="fa fa-heart-o"></i> by a <a href="http://jillianwallace.ca" target="_blank">Vegetarian with a Soy Allergy</a></p>
+			<p>Icons by <a href="https://dribbble.com/tessdonohoe">Tess Donohoe</a></p>
+		</footer>
+	</div><!-- /.container -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/myApp.js"></script>
+	<script src="js/clickie.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

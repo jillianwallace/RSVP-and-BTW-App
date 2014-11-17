@@ -1,0 +1,520 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-border-box: box-sizing;
+  -webkit-border-box: box-sizing;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+
+body {
+  background: #edfcfc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+header h1 {
+  font-family: 'Kotta One', serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+header h1.break {
+  text-align: center;
+  border-bottom: 4px solid #000;
+  border-bottom-style: double;
+  line-height: 2px;
+  padding: 0;
+  margin-bottom: 70px;
+}
+header h1.break span {
+  background-color: #edfcfc;
+  padding: 0 3.5%;
+}
+header h2 {
+  display: inline;
+  float: left;
+  width: 68.75%;
+  margin: 0 1.04167%;
+  margin-left: 13.54167%;
+  font-family: 'Kotta One', serif;
+  font-size: 1.3em;
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+header h2 span.highlight {
+  color: #54adb5;
+}
+header span.ampersand {
+  display: inline-block;
+  font-size: 2em;
+  position: relative;
+  top: 7px;
+  left: 0;
+}
+
+.sectionDiet,
+.sectionAllergy,
+.sectionCourse,
+.sectionButton,
+.sectionRecipes {
+  width: 80%;
+  margin: 0 auto 50px auto;
+  padding: 10px;
+}
+
+.threeColumn {
+  display: inline;
+  float: left;
+  width: 27.08333%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.sectionDiet h3,
+.sectionCourse h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+h3.rule {
+  text-align: center;
+  border-bottom: 4px solid #000;
+  border-bottom-style: double;
+  line-height: 2px;
+  padding: 0;
+  margin-bottom: 90px;
+}
+h3.rule span {
+  background-color: #edfcfc;
+  padding: 0 3.5%;
+}
+
+.sectionDiet input[type="radio"] {
+  display: none;
+}
+
+.sectionDiet input[type="radio"]:checked + label {
+  color: #54adb5;
+  font-weight: 700;
+}
+
+.sectionDiet input[type="radio"] + label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-variant: small-caps;
+  font-size: 30px;
+  color: #000;
+}
+
+.sectionDiet input[type="radio"] + label:hover {
+  color: #54adb5;
+}
+
+.sectionAllergy h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  margin-bottom: 90px;
+}
+
+.allergy input[type="checkbox"] {
+  display: none;
+}
+
+.allergy input[type="checkbox"] + label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-variant: small-caps;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.allergy {
+  text-align: center;
+  cursor: pointer;
+  width: 16%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sectionCourse input[type="radio"] {
+  display: none;
+}
+
+.sectionCourse input[type="radio"]:checked + label {
+  color: #54adb5;
+  font-weight: 700;
+}
+
+.sectionCourse input[type="radio"] + label {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-variant: small-caps;
+  font-size: 30px;
+  color: #000;
+}
+
+.sectionCourse input[type="radio"] + label:hover {
+  color: #54adb5;
+}
+
+.sectionButton {
+  margin-top: 30px;
+}
+
+button {
+  display: inline;
+  float: left;
+  width: 22.91667%;
+  margin: 0 1.04167%;
+  margin-left: 38.54167%;
+  padding: 7px 25px;
+  text-align: center;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-family: 'Kotta One', serif;
+}
+
+button:hover {
+  box-shadow: 5px 5px 2px #ccc;
+  font-weight: 700;
+}
+
+button:focus,
+button:active {
+  background: none;
+  outline: 0;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.recipeColumn {
+  width: 31%;
+  margin-left: 2%;
+  margin-bottom: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+.recipeColumn p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.recipeColumn img {
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  margin-bottom: 0;
+}
+.recipeColumn a {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.recipeColumn a :hover {
+  color: #ef6f26;
+}
+
+p {
+  text-align: center;
+  font-family: 'Kotta One', serif;
+}
+p a {
+  text-decoration: none;
+  color: #000;
+}
+p a:hover {
+  color: #ef6f26;
+}
+
+@media (max-width: 890px) {
+  header h1 {
+    font-size: 3.5em;
+  }
+
+  .allergy {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.04167%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  button {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.04167%;
+    margin-left: 34.375%;
+  }
+
+  .recipeColumn {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 676px) {
+  header h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .recipeColumn {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .allergy {
+    display: inline;
+    float: left;
+    width: 47.91667%;
+    margin: 0 1.04167%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  button {
+    display: inline;
+    float: left;
+    width: 47.91667%;
+    margin: 0 1.04167%;
+    margin-left: 26.04167%;
+  }
+
+  .threeColumn {
+    display: inline;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.2em;
+    position: relative;
+    top: 5px;
+  }
+
+  .sectionDiet h3,
+  .sectionAllergy h3,
+  .sectionCourse h3 {
+    font-size: 1.2em;
+  }
+
+  .sectionDiet input[type="radio"] + label {
+    font-size: 1.5em;
+  }
+
+  .sectionCourse input[type="radio"] + label {
+    font-size: 1.5em;
+  }
+}
